@@ -17,16 +17,15 @@ export const search =
 
     try {
       const res = await axios.get(
-        "https://api.twitch.tv/helix/search/channels?query=timthetatman",
+        "https://api.twitch.tv/helix/search/channels?query=" +
+          searchQuery.replaceAll(" ", "%20"),
+
         config
       );
 
-      console.log("query:", searchQuery);
-      console.log("res.data:", res.data);
-
       dispatch({
         type: SEARCH_CHANNEL,
-        payload: res.data,
+        payload: res.data.data,
       });
     } catch (err) {
       const errors = err.response.data.errors;

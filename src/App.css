@@ -1,4 +1,174 @@
-.App {
-  text-align: center;
+html {
+  background-color: #ececec;
+  font-family: "Roboto", sans-serif;
+}
+
+.searchBackground {
+  width: 100vw;
+  height: 100vh;
   background-color: #6441a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input:focus {
+  outline-width: 0;
+  background-color: #ececec;
+  font-size: 1em;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.searchBackground input {
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.searchBackground input[type="text"]::placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: center;
+}
+
+.profileTable {
+  border-collapse: collapse;
+  background-color: #ffffff;
+  margin: 20px;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+
+.profileTable:hover {
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+
+.profileCard {
+  display: flex;
+  padding: 10px;
+  text-align: left;
+}
+
+.profileCard img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.profileCard .contents {
+  margin-left: 10px;
+}
+
+.contents h3,
+p {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+p.title {
+  font-weight: 400;
+}
+
+p.game {
+  font-weight: 400;
+  color: #6441a4;
+}
+
+.leftBanner {
+  height: 100%;
+  width: 5px;
+  background-color: #6441a4;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.navBar {
+  background-color: #6441a4;
+  padding: 10px;
+}
+
+.navBar svg {
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navBar a:hover {
+  color: #dbdbdb;
+  font-size: 1.3em;
+}
+
+.navBar a h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.navBar a h2,
+i {
+  display: inline;
+}
+
+.navBar a i {
+}
+
+.results {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.verifiedIcon {
+  color: #6441a4;
+}
+
+.profileDescription {
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+  min-height: 170px;
+}
+
+.profileDescription img {
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  float: left;
+}
+
+.profileDescription .rightProfile {
+  margin: 10px;
+  display: inline-block;
+}
+
+.rightProfile h3 {
+  margin-top: 0;
+}
+
+.aboutSection {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: calc(100% - 40px);
+}
+
+.italic {
+  font-style: italic;
 }

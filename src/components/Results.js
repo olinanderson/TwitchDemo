@@ -59,7 +59,7 @@ const Results = ({ channelsLoading, searchResults, getUser, getFollowers }) => {
             <tr>
               <th className="leftBanner"></th>
               <th className="profileCard">
-                <img src={value.thumbnail_url} />
+                <img src={value.thumbnail_url} alt="" />
                 <div className="contents">
                   <h3>{value.display_name}</h3>
                   <p className="game">{value.game_name}</p>

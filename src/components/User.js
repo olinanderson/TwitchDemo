@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import Moment from "react-moment";
@@ -17,7 +17,7 @@ const User = ({ user, searchQuery }) => {
 
   // Function determining if the user is verified
   const checkVer = () => {
-    if (userResults.broadcaster_type == "partner") {
+    if (userResults.broadcaster_type === "partner") {
       return (
         <svg
           type="color-fill-current"
@@ -64,7 +64,7 @@ const User = ({ user, searchQuery }) => {
     <Fragment>
       <Navbar />
       <div className="profileDescription">
-        <img src={userObject.profile_image_url} />
+        <img src={userObject.profile_image_url} alt="" />
 
         <div className="rightProfile">
           <h3>

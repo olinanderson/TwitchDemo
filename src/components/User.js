@@ -11,7 +11,7 @@ const User = ({ user, searchQuery }) => {
   var { userLoading, userResults, followers, userIndex } = user;
 
   // If channels are loading return spinner
-  if (userLoading) {
+  if (userLoading || !followers) {
     return <Spinner />;
   }
 

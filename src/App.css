@@ -15,19 +15,46 @@ html {
 input:focus {
   outline-width: 0;
   background-color: #ececec;
-  font-size: 1em;
+  font-size: 1.4em;
+}
+
+input::placeholder {
+  font-size: 1.4em;
 }
 
 input:focus::placeholder {
   color: transparent;
 }
 
+.searchBackground button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+
+.searchBackground button:hover {
+  font-size: 2.2em;
+  color: #d8d8d8;
+  cursor: pointer;
+}
+
 .searchBackground input {
-  width: 60%;
-  height: 40px;
+  width: 40%;
+  height: 35px;
   border-radius: 20px;
   border: 1px solid white;
   text-align: center;
+  transition: 0.3s;
+  min-width: 250px;
+  font-style: italic;
+  color: #5c5c5c;
+}
+
+.searchBackground input:hover {
+  background-color: #ececec;
+  cursor: text;
 }
 
 .searchBackground input[type="text"]::placeholder {
@@ -121,9 +148,6 @@ p.game {
 .navBar a h2,
 i {
   display: inline;
-}
-
-.navBar a i {
 }
 
 .results {

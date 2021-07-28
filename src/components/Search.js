@@ -38,15 +38,15 @@ const Search = ({ search }) => {
       <form onSubmit={(e) => onSubmit(e)}>
         <div className="searchBackground">
           <input
-            autocomplete="off"
+            autoComplete="off"
             type="text"
             name="searchQuery"
-            placeholder="Search for channels..."
+            placeholder="Search For Twitch Channels..."
             id="searchQuery"
             onChange={(e) => onChange(e)}
           />
           <button>
-            <i class="fas fa-search"></i>
+            <i className="fas fa-search"></i>
           </button>
         </div>
       </form>
